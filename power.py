@@ -2,8 +2,6 @@
 
 # Change this value for a different result
 terms = 10
-
-# Uncomment to take number of terms from user
 #terms = int(input("How many terms? "))
 
 # use anonymous function
