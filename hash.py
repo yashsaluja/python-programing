@@ -15,7 +15,10 @@ def hash_file(filename):
            h.update(chunk)
 
 
+
    return h.hexdigest()
 
 message = hash_file("track1.mp3")
+
+
 print(message)
