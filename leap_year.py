@@ -1,6 +1,6 @@
 year = 2000
 
-# year = int(input("Enter a year: "))
+year = int(input("Enter a year: "))
 
 if (year % 4) == 0:
    if (year % 100) == 0:
