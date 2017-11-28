@@ -12,6 +12,7 @@ while i < len(items):
         break
  
     i = i + 1
+    
  
 if flag == 1:
     print("item found at position:", i + 1)
