@@ -1,12 +1,14 @@
 def radixsort( aList ):
   RADIX = 10
   maxLength = False
+
   tmp , placement = -1, 1
  
   while not maxLength:
     maxLength = True
 
     buckets = [list() for _ in range( RADIX )]
+    
  
     for  i in aList:
       tmp = i / placement
