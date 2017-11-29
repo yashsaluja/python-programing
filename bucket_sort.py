@@ -7,7 +7,10 @@ def bucket_sort(seq):
     buckets.append([]) * (biggest / 10 + 1)
     for number in seq:
         buckets[number / 10].append(number)
+
     for index, bucket in enumerate(buckets):
+
         buckets[index] = quicksort(bucket)
+        
     new_list = [number for number in bucket for bucket in buckets]
     return new_list
