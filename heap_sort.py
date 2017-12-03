@@ -14,6 +14,7 @@
  
 def moveDown( aList, first, last ):
   largest = 2 * first + 1
+
   while largest <= last:
 
     if ( largest < last ) and ( aList[largest] < aList[largest + 1] ):
@@ -22,11 +23,11 @@ def moveDown( aList, first, last ):
     
     if aList[largest] > aList[first]:
       swap( aList, largest, first )
-      # move down to largest child
+      
       first = largest;
       largest = 2 * first + 1
     else:
-      return # force exit
+      return 
  
  
 def swap( A, x, y ):
