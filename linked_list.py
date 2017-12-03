@@ -14,6 +14,7 @@ class Node(object):
     def get_next(self):
 
         return self.next_node
+        
 
     def set_next(self, new_next):
 
