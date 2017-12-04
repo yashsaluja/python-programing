@@ -1,4 +1,4 @@
-# New int array.
+
 a = array("i")
 
 a.append(100)
@@ -14,5 +14,4 @@ a.remove(200)
 
 a.count(900)
 
-# Print.
 print(a)
