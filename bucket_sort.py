@@ -1,10 +1,13 @@
 def bucket_sort(seq):
+
     biggest = 0
+    
     for number in seq:
         if number > biggest:
             biggest = number
     buckets = []
     buckets.append([]) * (biggest / 10 + 1)
+
     for number in seq:
         buckets[number / 10].append(number)
 
