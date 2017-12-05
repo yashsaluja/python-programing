@@ -7,6 +7,7 @@ def recur_factorial(n):
 
 
 num = 7
+
 if num < 0:
    print("Sorry, factorial does not exist for negative numbers")
 elif num == 0:
