@@ -2,11 +2,13 @@
   
   length = len( aList ) - 1
   leastParent = length / 2
+
   for i in range ( leastParent, -1, -1 ):
     moveDown( aList, i, length )
  
   
   for i in range ( length, 0, -1 ):
+    
     if aList[0] > aList[i]:
       swap( aList, 0, i )
       moveDown( aList, 0, i - 1 )
