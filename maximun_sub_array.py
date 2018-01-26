@@ -1,4 +1,5 @@
 def maxSubArray(ls):
+
     if len(ls) == 0:
        raise Exception("Array empty") 
       
@@ -7,6 +8,7 @@ def maxSubArray(ls):
     start = finish = 0
 
     for j in range(1, len(ls)):
+
     	if ls[j] > (runSum + ls[j]):
             runSum = ls[j]
             i = j
@@ -19,7 +21,9 @@ def maxSubArray(ls):
             finish = j
 
     print "maxSum =>", maxSum
+
     print "start =>", start, "; finish =>", finish
 
 maxSubArray([-2, 11, -4, 13, -5, 2])
+
 maxSubArray([-15, 29, -36, 3, -22, 11, 19, -5])
